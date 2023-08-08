@@ -1,6 +1,6 @@
 import { User } from "../models/userModel.js";
 import bcrypt from "bcrypt";
-import jwt from "jsonwebtoken"
+import ErrorHandler from "../middlewares/error.js";
 import { sendCookie } from "../utils/feature.js";
 
 export const login = async(req,res,next)=>{
